@@ -326,7 +326,9 @@ body {
   height: 44px;
   background-color: tomato;
   border-radius: 50%;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .teamplayers-socials-list {
   display: flex;
