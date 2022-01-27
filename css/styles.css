@@ -324,7 +324,7 @@ body {
 .teamplayers-socials-link {
   width: 44px;
   height: 44px;
-  background-color: tomato;
+  background-color: var(--main-background-color);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -336,6 +336,20 @@ body {
 }
 .teamplayers-socials-item + .teamplayers-socials-item {
   margin-left: 10px;
+}
+
+.teamplayers-socials-icon {
+  fill: #afb1b8;
+}
+
+.teamplayers-socials-link:hover,
+.teamplayers-socials-link:focus {
+  background-color: var(--accent-color);
+}
+
+.teamplayers-socials-link:hover .teamplayers-socials-icon,
+.teamplayers-socials-link:focus .teamplayers-socials-icon {
+  fill: var(--main-background-color);
 }
 
 .profile {
