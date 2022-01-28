@@ -321,6 +321,28 @@ body {
   text-align: center;
 }
 
+.feauters-icon-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thumb {
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background-color: var(--tertiary-white-background);
+  margin-left: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thumb:nth-child(4) {
+  margin-left: 0%;
+}
+
 .teamplayers-socials-link {
   width: 44px;
   height: 44px;
