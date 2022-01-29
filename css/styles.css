@@ -188,7 +188,12 @@ body {
   color: var(--accent-color);
 }
 
-/* Оформление контактов в хэдере */
+.contact-info-icon-tel,
+.contact-info-icon-mail {
+  fill: var(--primary-text-color);
+  margin-right: 10px;
+}
+
 .contact-info {
   font-weight: 500;
   font-size: 14px;
