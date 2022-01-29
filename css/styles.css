@@ -491,6 +491,10 @@ body {
   border-color: var(--accent-color);
 }
 
+.section-clients {
+  text-align: center;
+}
+
 /* Оформление футера */
 
 .footer {
