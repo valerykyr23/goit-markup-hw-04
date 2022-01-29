@@ -455,6 +455,42 @@ body {
   line-height: 1.8;
   letter-spacing: 0.03em;
 }
+
+.clients-website-link {
+  width: 170px;
+  height: 92px;
+  background-color: var(--main-background-color);
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+}
+
+.clients-list-item + .clients-list-item {
+  margin-left: 30px;
+}
+
+.clients-logo-icon {
+  fill: #afb1b8;
+}
+
+.clients-website-link:hover .clients-logo-icon,
+.clients-website-link:focus .clients-logo-icon {
+  fill: var(--accent-color);
+}
+
+.clients-list-item:hover .clients-website-link,
+.clients-list-item:focus .clients-website-link {
+  border-color: var(--accent-color);
+}
+
 /* Оформление футера */
 
 .footer {
