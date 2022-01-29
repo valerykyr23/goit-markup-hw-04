@@ -536,3 +536,52 @@ body {
 .address-item:focus {
   color: var(--accent-color);
 }
+.footer-socials-link {
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-socials-list {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-socials-item + .footer-socials-item {
+  margin-left: 10px;
+}
+
+.footer-socials-icon {
+  fill: var(--main-background-color);
+}
+
+.footer-socials-link:hover,
+.footer-socials-link:hover {
+  background-color: var(--accent-color);
+}
+
+.footer-socials {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: 70px;
+}
+
+.join-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-background-color);
+}
+
+.footer-general-container {
+  display: flex;
+  align-items: baseline;
+}
