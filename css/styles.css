@@ -221,28 +221,35 @@ body {
   margin-right: 10px;
 }
 
-.contact-info {
+.contact-info-list {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   display: flex;
 }
-.contact-info-item {
+
+.contact-info-list .info + .info {
+  margin-left: 50px;
+}
+
+.header-contact-info-link:hover,
+.header-contact-info-link:focus {
+  color: var(--accent-color);
+}
+
+.headercontact-info-link:hover .contact-info-icon-mail,
+.header-contact-info-link:focus .contact-info-icon-mail {
+  fill: var(--accent-color);
+  color: var(--accent-color);
+}
+
+.header-contact-info-link {
   color: var(--primary-text-color);
   text-decoration-line: none;
   padding-top: 32px;
   padding-bottom: 32px;
   display: inline-block;
-}
-
-.contact-info .info + .info {
-  margin-left: 50px;
-}
-
-.contact-info-item:hover,
-.contact-info-item:focus {
-  color: var(--accent-color);
 }
 
 /* Оформление фильтра на странице портфолио */
