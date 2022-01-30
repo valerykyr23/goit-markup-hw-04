@@ -18,7 +18,7 @@
   --secondary-text-color: rgba(255, 255, 255, 0.6);
 }
 
-/*  Ресет */
+/* Ресет */
 
 p,
 h1,
@@ -39,6 +39,12 @@ img {
   display: block;
 }
 
+/* Утилитные классы для всех секций и страниц */
+
+.list {
+  list-style-type: none;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -51,24 +57,34 @@ img {
   padding-top: 94px;
 }
 
-.hero-section {
-  padding-top: 200px;
-  padding-bottom: 200px;
+/* Скрытый заголовок */
+
+.hidden-title {
+  display: none;
 }
 
 body {
   font-family: Roboto, sans-serif;
   color: var(--primary-text-color);
 }
-/*   Цвет фона секций страницы портфолио */
-.header {
-  background-color: var(--main-background-color);
-  border-bottom: 1px solid #ececec;
-}
+
 .main {
   background-color: var(--main-background-color);
 }
-/* Оформление надписи логотипа вверху и внизу*/
+
+/* Утилитный класс для оформления заголовка */
+
+.section-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+/* Оформление надписи логотипа в хэдере и футэре*/
+
 .footer-logo-link,
 .header-logo-link {
   font-family: Raleway, serif;
@@ -98,10 +114,6 @@ body {
 }
 
 /*  Секция герой на странице студии */
-.hero {
-  background-color: var(--dark-background);
-  text-align: center;
-}
 
 .overlay {
   margin-left: auto;
@@ -114,6 +126,17 @@ body {
   background-position: center;
   background-size: cover;
 }
+
+.hero {
+  background-color: var(--dark-background);
+  text-align: center;
+}
+
+.hero-section {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
 .hero-title {
   color: var(--main-background-color);
   font-weight: 900;
@@ -139,9 +162,20 @@ body {
   height: 50px;
 }
 
-/* Утилитный класс */
-.list {
-  list-style-type: none;
+/* Оформление хэдера */
+
+.header {
+  background-color: var(--main-background-color);
+  border-bottom: 1px solid #ececec;
+}
+
+.header-container {
+  display: flex;
+}
+.header-connect {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
 }
 
 /* Главная навигация страницы */
@@ -153,15 +187,6 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
   display: flex;
-}
-
-.header-container {
-  display: flex;
-}
-.header-connect {
-  display: flex;
-  margin-left: auto;
-  align-items: center;
 }
 
 .navigation {
@@ -187,6 +212,8 @@ body {
 .site-nav .link.current {
   color: var(--accent-color);
 }
+
+/* Оформление контактов в хєдєре */
 
 .contact-info-icon-tel,
 .contact-info-icon-mail {
@@ -217,6 +244,8 @@ body {
 .contact-info-item:focus {
   color: var(--accent-color);
 }
+
+/* Оформление фильтра на странице портфолио */
 
 .page-filter {
   display: flex;
@@ -251,11 +280,7 @@ body {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-/* Скрытый заголовок */
-
-.hidden-title {
-  display: none;
-}
+/* Секция преимущества на странице студии */
 
 .feature-list {
   display: flex;
@@ -287,14 +312,13 @@ body {
   margin-right: 0;
 }
 
-.section-title {
-  color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-  margin-bottom: 50px;
+.features-icon-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+/* Секция Чем мы занимаемся на странице студии */
 
 .section-work {
   background-color: var(--main-background-color);
@@ -321,15 +345,11 @@ body {
   margin-right: 0;
 }
 
+/* Секция Наша команда на странице студии */
+
 .section-team {
   background-color: var(--tertiary-white-background);
   text-align: center;
-}
-
-.feauters-icon-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .thumb {
@@ -416,6 +436,8 @@ body {
   letter-spacing: 0.03em;
 }
 
+/* Секция с фотографиями проектов на странице портфолио */
+
 .project-portfolio {
   display: flex;
   flex-wrap: wrap;
@@ -443,7 +465,6 @@ body {
 
 .project-item:nth-child(3n) {
   margin-right: 0;
-  /* margin-bottom: 0; */
 }
 
 .project-title {
@@ -460,6 +481,8 @@ body {
   line-height: 1.8;
   letter-spacing: 0.03em;
 }
+
+/* Секция Наши клиенты на странице студии */
 
 .clients-website-link {
   width: 170px;
@@ -500,7 +523,7 @@ body {
   text-align: center;
 }
 
-/* Оформление футера */
+/* Оформление футэра */
 
 .footer {
   background-color: var(--dark-background);
@@ -510,6 +533,8 @@ body {
   color: var(--main-background-color);
   text-decoration-line: none;
 }
+
+/* Оформление контактов  в футэре */
 
 .address-first-item {
   color: var(--main-background-color);
@@ -541,6 +566,9 @@ body {
 .address-item:focus {
   color: var(--accent-color);
 }
+
+/* Оформление соцсетей в футэре */
+
 .footer-socials-link {
   width: 44px;
   height: 44px;
