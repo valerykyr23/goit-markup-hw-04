@@ -238,18 +238,6 @@ body {
   color: var(--accent-color);
 }
 
-.contact-info-icon-tel:hover,
-.contact-info-icon-tel:focus {
-  fill: var(--accent-color);
-}
-
-.contact-info-icon-mail:hover,
-.contact-info-icon-mail:focus {
-  fill: var(--accent-color);
-}
-
-/*Не работает одновременно ховер имейла  и телефона  и иконок*/
-
 .header-contact-info-link:hover .contact-info-icon-mail,
 .header-contact-info-link:focus .contact-info-icon-mail {
   fill: var(--accent-color);
