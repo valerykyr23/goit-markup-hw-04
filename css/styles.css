@@ -317,6 +317,9 @@ body {
 .feature-list-item {
   margin-right: 30px;
   min-width: 270px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
 }
 
 .feature-list-item:nth-child(4n) {
@@ -362,7 +365,7 @@ body {
   height: 120px;
   border-radius: 4px;
   background-color: var(--tertiary-white-background);
-  margin-left: 30px;
+  margin-right: 30px;
   margin-bottom: 30px;
   display: flex;
   justify-content: center;
@@ -370,7 +373,7 @@ body {
 }
 
 .thumb:nth-child(4) {
-  margin-left: 0%;
+  margin-right: 0%;
 }
 
 .teamplayers-socials-link {
@@ -439,6 +442,7 @@ body {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
 }
 
 /* Секция с фотографиями проектов на странице портфолио */
