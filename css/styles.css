@@ -323,12 +323,6 @@ body {
   margin-right: 0;
 }
 
-.features-icon-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 /* Секция Чем мы занимаемся на странице студии */
 
 .section-work {
