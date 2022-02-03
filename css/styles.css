@@ -395,6 +395,7 @@ body {
 .teamplayers-socials-link:hover,
 .teamplayers-socials-link:focus {
   background-color: var(--accent-color);
+  cursor: pointer;
 }
 
 .teamplayers-socials-link:hover .teamplayers-socials-icon,
